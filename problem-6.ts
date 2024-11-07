@@ -8,14 +8,14 @@
         email: string;
     }
 
-    function updateProfile(profile: Profile, update: Partial<Profile>): Profile {
+    function updateProfile(myProfile: Profile, update: Partial<Profile>): Profile {
         return {
-            ...profile,
+            ...myProfile,
             ...update
         }
     }
 
-    const profile: Profile = {
+    const myProfile: Profile = {
         name: "Rasibul Islam",
         age: 25,
         email: "rasibul179@gmail.com"
@@ -25,6 +25,6 @@
         age: 27
     }
 
-    const updatedProfile: Profile = updateProfile(profile, updateProdile);
+    const updatedProfile: Profile = updateProfile(myProfile, updateProdile);
     console.log(updatedProfile);
 }
